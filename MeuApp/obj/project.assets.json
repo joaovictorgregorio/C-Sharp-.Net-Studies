@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\MeuApp\\MeuApp.csproj",
+      "projectUniqueName": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\C-Sharp-.Net-Studies\\MeuApp\\MeuApp.csproj",
       "projectName": "MeuApp",
-      "projectPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\MeuApp\\MeuApp.csproj",
+      "projectPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\C-Sharp-.Net-Studies\\MeuApp\\MeuApp.csproj",
       "packagesPath": "C:\\Users\\Joao Victor Gregorio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\MeuApp\\obj\\",
+      "outputPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\C-Sharp-.Net-Studies\\MeuApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Joao Victor Gregorio\\AppData\\Roaming\\NuGet\\NuGet.Config",
