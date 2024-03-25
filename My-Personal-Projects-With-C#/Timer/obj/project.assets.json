@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\my-personal-projects-with-c#\\Timer\\Timer.csproj",
+      "projectUniqueName": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\C-Sharp-.Net-Studies\\My-Personal-Projects-With-C#\\Timer\\Timer.csproj",
       "projectName": "Timer",
-      "projectPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\my-personal-projects-with-c#\\Timer\\Timer.csproj",
+      "projectPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\C-Sharp-.Net-Studies\\My-Personal-Projects-With-C#\\Timer\\Timer.csproj",
       "packagesPath": "C:\\Users\\Joao Victor Gregorio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\my-personal-projects-with-c#\\Timer\\obj\\",
+      "outputPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\C-Sharp-.Net-Studies\\My-Personal-Projects-With-C#\\Timer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Joao Victor Gregorio\\AppData\\Roaming\\NuGet\\NuGet.Config",
