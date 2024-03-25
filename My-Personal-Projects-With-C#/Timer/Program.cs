@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading;
-using System.Media;
 using System.Data.Common;
 
 namespace Timer
@@ -9,7 +8,7 @@ namespace Timer
     {
         static void Main(string[] args)
         {
-            Menu();
+            CountdownTimer(10);
         }
         static void Menu()
         {
@@ -22,22 +21,23 @@ namespace Timer
             Console.WriteLine("Segundos = s. Exemplo 10s");
             Console.WriteLine("Minutos = min. Exemplo 1min");
             Console.WriteLine("Horas igual = h. Exemplo 1h");
-            Console.WriteLine("Tipo de contagem = Progressiva ou Regressiva");
             Console.WriteLine("0 = Sair");
             Console.WriteLine("--------------------");
-            
-            Thread.Sleep(500);
 
+            Console.Write("Quanto tempo deseja contar? ");
             // Capturar os dados digitado pelo usuário. E transformar os caracteres em minúsculos.
             string userTime = Console.ReadLine().ToLower();
+
+            Thread.Sleep(500);
+
+            Console.Write("Tipo de contagem = progressiva ou regressiva? ");
+            // Capturar o tipo de contagem que o usuário deseja.
+            string countType = Console.ReadLine().ToLower();
+
             // timeMeasurementUnit = Unidade de medida de tempo.
             char timeMeasurementUnit = char.Parse(userTime.Substring(userTime.Length - 1));
             int time = int.Parse(userTime.Substring(0, userTime.Length - 1));
             int multiplyingToMinutes = 1;
-
-            if (userTime == "progressiva") {
-                ProgressiveTimer(time);
-            }
 
             if (timeMeasurementUnit == 'm')
             {
@@ -48,9 +48,9 @@ namespace Timer
                 System.Environment.Exit(0);
             }
 
-             PrepareToGetStarted(time);
+            PrepareToGetStarted(time, countType);
         }
-        static void PrepareToGetStarted(int time)
+        static void PrepareToGetStarted(int time, string counttype)
         {
             Console.Clear();
             Console.WriteLine("Preparar...");
@@ -60,7 +60,14 @@ namespace Timer
             Console.WriteLine("Vai...");
             Thread.Sleep(1500);
 
-            Count(time);
+            if (counttype == "progressiva")
+            {
+                ProgressiveTimer(time);
+            }
+            if (counttype == "regressiva")
+            {
+
+            }
         }
         static void ProgressiveTimer(int time)
         {
@@ -77,7 +84,26 @@ namespace Timer
             }
 
             Console.WriteLine("Contagem finalizada!");
-            Thread.Sleep(1000);
+            Thread.Sleep(1500);
+            Menu();
+        }
+        static void CountdownTimer(int time)
+        {
+            Console.Clear();
+
+            int currentTime = 0;
+
+            for (int i = 1; currentTime == time; i--)
+            {
+                Console.Clear();
+                Console.WriteLine(i);
+                Thread.Sleep(1000);
+                currentTime--;
+            }
+
+            Console.WriteLine("Contagem finalizada!");
+            Thread.Sleep(1500);
+            Menu();
         }
     }
 }
