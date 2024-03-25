@@ -8,7 +8,7 @@ namespace Timer
     {
         static void Main(string[] args)
         {
-            CountdownTimer(10);
+            Menu();
         }
         static void Menu()
         {
@@ -19,7 +19,7 @@ namespace Timer
             Thread.Sleep(500);
 
             Console.WriteLine("Segundos = s. Exemplo 10s");
-            Console.WriteLine("Minutos = min. Exemplo 1min");
+            Console.WriteLine("Minutos = m. Exemplo 1m");
             Console.WriteLine("Horas igual = h. Exemplo 1h");
             Console.WriteLine("0 = Sair");
             Console.WriteLine("--------------------");
@@ -27,6 +27,11 @@ namespace Timer
             Console.Write("Quanto tempo deseja contar? ");
             // Capturar os dados digitado pelo usuário. E transformar os caracteres em minúsculos.
             string userTime = Console.ReadLine().ToLower();
+
+            if (userTime == "0")
+            {
+                System.Environment.Exit(0);
+            }
 
             Thread.Sleep(500);
 
@@ -43,11 +48,7 @@ namespace Timer
             {
                 time *= 60;
             }
-            if (time == 0)
-            {
-                System.Environment.Exit(0);
-            }
-
+            
             PrepareToGetStarted(time, countType);
         }
         static void PrepareToGetStarted(int time, string counttype)
@@ -66,7 +67,7 @@ namespace Timer
             }
             if (counttype == "regressiva")
             {
-
+                CountdownTimer(time);
             }
         }
         static void ProgressiveTimer(int time)
@@ -91,14 +92,11 @@ namespace Timer
         {
             Console.Clear();
 
-            int currentTime = 0;
-
-            for (int i = 1; currentTime == time; i--)
+            for (int i = time; i >= 0; i--)
             {
                 Console.Clear();
                 Console.WriteLine(i);
                 Thread.Sleep(1000);
-                currentTime--;
             }
 
             Console.WriteLine("Contagem finalizada!");
