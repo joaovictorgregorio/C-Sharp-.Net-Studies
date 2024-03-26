@@ -132,6 +132,7 @@ namespace Calculator
 
             uint potentiation = (uint)Math.Pow(baseNumber, exponent);
 
+            Console.WriteLine("");
             Console.WriteLine($"O resultado da potenciação é: {potentiation}");
             Console.ReadKey();
             Menu();
