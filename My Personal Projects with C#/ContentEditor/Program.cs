@@ -72,16 +72,29 @@ namespace ContentEditor
             Console.Write("Deseja salvar o arquivo? [sim ou não] ");
             string save = Console.ReadLine().ToLower();
 
-            if (save == "sim") {
+            if (save == "sim")
+            {
                 SaveFile(text);
-            } 
-            else {
+            }
+            else
+            {
                 Menu();
             }
         }
         static void EditFile()
         {
+            Console.Clear();
 
+            Console.Write("Qual o caminho do arquivo? ");
+            string path = Console.ReadLine();
+
+            if (File.Exists(path))
+            {
+                CreateFile();
+            }
+            else {
+                Menu();
+            }
         }
         static void OpenFile()
         {
