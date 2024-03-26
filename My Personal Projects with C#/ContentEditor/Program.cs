@@ -73,7 +73,7 @@ namespace ContentEditor
             string save = Console.ReadLine().ToLower();
 
             if (save == "sim") {
-                SaveFile(save);
+                SaveFile(text);
             } 
             else {
                 Menu();
@@ -103,6 +103,11 @@ namespace ContentEditor
             {
                 file.Write(text);
             }
+
+            Console.WriteLine("-------------------------------");
+            Console.WriteLine($"Seu arquivo foi salvo em {path}, com sucesso!");
+            Console.ReadLine();
+            Menu();
         }
         static void DeleteFile()
         {
