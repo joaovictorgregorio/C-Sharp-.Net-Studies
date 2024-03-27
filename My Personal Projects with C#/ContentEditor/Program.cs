@@ -92,13 +92,32 @@ namespace ContentEditor
             {
                 CreateFile();
             }
-            else {
+            else
+            {
                 Menu();
             }
         }
         static void OpenFile()
         {
+            Console.Clear();
 
+            Console.Write("Qual o caminho do arquivo que deseja abrir? ");
+
+            string path = Console.ReadLine();
+
+            // Using: Aqui, estamos usando uma instrução using, que garante que os recursos sejam liberados de forma adequada após o seu uso. No caso de objetos que implementam a interface IDisposable, como StreamReader, isso garante que o método Dispose() seja chamado, liberando o recurso associado, mesmo se ocorrerem exceções durante o uso do recurso.
+            // var file = new StreamReader(path). Aqui, estamos criando uma instância de StreamReader, que é usado para ler texto de um arquivo. Passamos o caminho do arquivo (path) para o construtor do StreamReader para abrir o arquivo especificado para leitura. O StreamReader é atribuído à variável file.
+            // string text = file.ReadToEnd(). Aqui, estamos chamando o método ReadToEnd() do objeto StreamReader para ler todo o conteúdo do arquivo até o final e armazená-lo na variável text. Este método lê todos os caracteres restantes no fluxo de entrada.
+            // Console.WriteLine(text). Finalmente, estamos imprimindo o conteúdo do arquivo na saída padrão (no caso, o console) usando Console.WriteLine(). Isso exibirá o conteúdo do arquivo lido pelo StreamReader.
+            using (var file = new StreamReader(path))
+            {
+                string text = file.ReadToEnd();
+                Console.WriteLine(text);
+            }
+
+            Console.WriteLine("");
+            Console.ReadLine();
+            Menu();
         }
         static void SaveFile(string text)
         {
