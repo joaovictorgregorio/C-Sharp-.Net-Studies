@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\C-Sharp-.Net-Studies\\My Personal Projects with C#\\Timer\\Timer.csproj": {}
+    "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso Balta C# .NET\\C-Sharp-.Net-Studies\\My Personal Projects with C#\\Timer\\Timer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\C-Sharp-.Net-Studies\\My Personal Projects with C#\\Timer\\Timer.csproj": {
+    "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso Balta C# .NET\\C-Sharp-.Net-Studies\\My Personal Projects with C#\\Timer\\Timer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\C-Sharp-.Net-Studies\\My Personal Projects with C#\\Timer\\Timer.csproj",
+        "projectUniqueName": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso Balta C# .NET\\C-Sharp-.Net-Studies\\My Personal Projects with C#\\Timer\\Timer.csproj",
         "projectName": "Timer",
-        "projectPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\C-Sharp-.Net-Studies\\My Personal Projects with C#\\Timer\\Timer.csproj",
+        "projectPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso Balta C# .NET\\C-Sharp-.Net-Studies\\My Personal Projects with C#\\Timer\\Timer.csproj",
         "packagesPath": "C:\\Users\\Joao Victor Gregorio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso-Balta-C#\\C-Sharp-.Net-Studies\\My Personal Projects with C#\\Timer\\obj\\",
+        "outputPath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso Balta C# .NET\\C-Sharp-.Net-Studies\\My Personal Projects with C#\\Timer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Joao Victor Gregorio\\AppData\\Roaming\\NuGet\\NuGet.Config",

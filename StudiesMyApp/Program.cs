@@ -6,6 +6,8 @@ namespace StudiesMyApp
     {
         static void Main(string[] args)
         {
+            Console.Clear();
+
             /* GUID
 
             var id = Guid.NewGuid();
@@ -42,6 +44,7 @@ namespace StudiesMyApp
             Console.WriteLine(text.Contains("testando", StringComparison.OrdinalIgnoreCase));
             */
 
+            /*  STARTSWITH / ENDSWITH
             var text = "Este texto é um teste";
 
             Console.WriteLine(text.StartsWith("Este"));
@@ -53,6 +56,31 @@ namespace StudiesMyApp
             Console.WriteLine(text.EndsWith("comedia"));
             Console.WriteLine("--------------------------------");
             Console.WriteLine(text.StartsWith("este", StringComparison.OrdinalIgnoreCase));
+            */
+
+            /* EQUALS
+            var text = "Testando um texto comparação";
+            var number = 23;
+
+            Console.WriteLine(text.Equals("Testando um texto comparação"));
+            Console.WriteLine(text.Equals("testando um texto comparação"));
+            Console.WriteLine(text.Equals("testando um texto comparação", StringComparison.OrdinalIgnoreCase));
+            Console.WriteLine(number.Equals(24));
+            */
+
+            /* ÍNDICES 
+
+            var text = "Este é um texto de teste";
+
+            Mostra à posição de onde se encontra a STRING.
+            Console.WriteLine(text.IndexOf("é"));
+
+            Mostra à posição onde apareceu está última STRING.
+            Console.WriteLine(text.LastIndexOf("s"));
+            */
+
+            // MÉTODOS ADICIONAIS
+            
         }
     }
 }
