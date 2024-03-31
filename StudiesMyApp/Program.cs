@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace StudiesMyApp
 {
@@ -79,8 +80,53 @@ namespace StudiesMyApp
             Console.WriteLine(text.LastIndexOf("s"));
             */
 
-            // MÉTODOS ADICIONAIS
+            /* MÉTODOS ADICIONAIS
             
+            var text = "Este texto é um teste";
+
+            Console.WriteLine(text.ToLower());
+            Console.WriteLine(text.ToUpper());
+            Console.WriteLine(text.Insert(11, "aqui "));
+            Console.WriteLine(text.Remove(0, 5));
+            Console.WriteLine(text.Length);
+            */
+
+            /*  MANIPULANDO STRINGS
+            var text = "Este texto é um teste";
+
+            Console.WriteLine(text.Replace("e", "a", StringComparison.OrdinalIgnoreCase));
+
+            Console.WriteLine("---------------------------");
+
+            var division = text.Split(" ");
+            Console.WriteLine(division[0]);
+            Console.WriteLine(division[1]);
+            Console.WriteLine(division[2]);
+            Console.WriteLine(division[3]);
+            Console.WriteLine(division[4]);
+
+            Console.WriteLine("---------------------------");
+
+            // var result = text.Substring( 5, 5);
+            var result = text.Substring(5, text.LastIndexOf("o"));
+            Console.WriteLine(result);
+            
+            Console.WriteLine("---------------------------");
+
+            var textTrim = " Este é um texto espaçado ";
+            Console.WriteLine(textTrim.Trim());
+            */
+
+            // STRINGBUILDER
+
+            var text = new StringBuilder();
+            text.Append("Este ");
+            text.Append("texto ");
+            text.Append("é ");
+            text.Append("um ");
+            text.Append("teste");
+
+            Console.WriteLine(text.ToString());
         }
     }
 }
