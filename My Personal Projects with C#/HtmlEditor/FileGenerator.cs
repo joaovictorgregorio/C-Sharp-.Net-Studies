@@ -6,16 +6,20 @@ namespace HtmlEditor {
         public static void FileGeneratorHomeScreen() {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Blue;
+
+            // Construindo as linhas
+            Console.Write("+ ");
+            for(var i = 0; i < 100; i++) {
+                Console.Write("-");
+            }
+            Console.Write(" +");
             
-            Console.SetCursorPosition(10, 1);
+            Console.SetCursorPosition(41, 1);
             Thread.Sleep(250);
             Console.WriteLine(" Generating New File ");
-
-            Console.SetCursorPosition(0, 2);
-            for(var i = 0; i < 14; i++) {
-                Thread.Sleep(10);
-                Console.Write(" = ");
-            }
+            Console.SetCursorPosition(37, 2);
+            Thread.Sleep(20);
+            Console.WriteLine("+ ------------------------- +");
 
             StartsFileGeneration();
         }
@@ -37,7 +41,7 @@ namespace HtmlEditor {
             Console.WriteLine("");
             Console.Write("@Deseja salvar este arquivo: [yes or no] ");
         
-            
+            // Planejar salvamento do arquivo...
         }
     }
 }
