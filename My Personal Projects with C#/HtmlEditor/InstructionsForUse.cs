@@ -1,10 +1,14 @@
+using System.ComponentModel;
+
 namespace HtmlEditor {
     public static class InstructionsForUse {
         public static void MainScreenOptions() {
+            Console.ForegroundColor = ConsoleColor.White;
+
             // Adiciona a descrição na posição deseja, neste caso, coluna posição 11, na linha 1
-            Console.SetCursorPosition(10, 1);
+            Console.SetCursorPosition(8, 1);
             Thread.Sleep(200);
-            Console.WriteLine(" ||| HTML Editor ||| ");
+            Console.WriteLine(" ***** HTML Editor ***** ");
 
             Console.SetCursorPosition(4, 3);
             Thread.Sleep(250);
@@ -20,11 +24,29 @@ namespace HtmlEditor {
 
             Console.SetCursorPosition(4, 9);
             Thread.Sleep(250);
-            Console.Write("Digite a opção escolhida: ");
+            Console.WriteLine("0 - Go out");
+
+            Console.SetCursorPosition(4, 11);
+            Thread.Sleep(250);
+            Console.Write("Enter your chosen option: ");
+
+            var option = short.Parse(Console.ReadLine());
+            ChooseAnOption(option);
         }
         
         public static void ChooseAnOption(short option) {
-            
+            switch(option) {
+                case 0: {
+                    Console.Clear();
+                    Environment.Exit(0);
+                    break;
+                }
+                case 1: FileGenerator.FileGeneratorHomeScreen(); break;
+                case 2: Console.WriteLine("Open file"); break;
+                case 3: Console.WriteLine("Delete file"); break;
+                default: Menu.MainScreen(); break;
+                
+            }
         }
     }
 }

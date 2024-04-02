@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HtmlEditor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0481c22b4bb19071ea15f9aa7f2d87ba3f247cc3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4935584a28f2263cc8c1f423f30d62732e92d727")]
 [assembly: System.Reflection.AssemblyProductAttribute("HtmlEditor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HtmlEditor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

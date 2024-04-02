@@ -4,7 +4,7 @@ namespace HtmlEditor {
     public static class Menu {
         public static void MainScreen() {
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
 
             ScreenConstruction();
             InstructionsForUse.MainScreenOptions();
@@ -28,7 +28,7 @@ namespace HtmlEditor {
         }
 
         public static void ScreenColumns() {
-            for(var lines = 14; lines > 1; lines--) {
+            for(var lines = 13; lines > 1; lines--) {
                 Console.Write("\n *");
 
                 for(var columns = 0; columns < 36; columns++) {
