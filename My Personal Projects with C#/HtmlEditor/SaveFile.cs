@@ -2,7 +2,7 @@ using System.Runtime.CompilerServices;
 
 namespace HtmlEditor {
     public static class SaveFile {
-        public static void SaveMenu() {
+        public static void SaveMenu(string text) {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
 
@@ -23,8 +23,6 @@ namespace HtmlEditor {
             Thread.Sleep(10);
             Console.WriteLine("+ ------------------------- +");
 
-            string text = " ";
-
             SavingFile(text);
         }
         
@@ -38,7 +36,7 @@ namespace HtmlEditor {
 
             Thread.Sleep(10);
             Console.WriteLine("+ ------------------------- +");
-            Console.WriteLine($"O arquivo foi salvo {directory}!");
+            Console.WriteLine($"The file has been saved to, {directory} successfully!");
             Console.ReadLine();
             Menu.MainScreen();
         }
