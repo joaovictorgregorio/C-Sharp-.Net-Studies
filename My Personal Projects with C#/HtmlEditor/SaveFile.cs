@@ -2,7 +2,7 @@ using System.Runtime.CompilerServices;
 
 namespace HtmlEditor {
     public static class SaveFile {
-        public static void SaveMenu(string text) {
+        public static void SaveFileMenu(string text) {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
 

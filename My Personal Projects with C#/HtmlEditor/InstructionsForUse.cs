@@ -45,7 +45,6 @@ namespace HtmlEditor {
                 case 2: Console.WriteLine("Open file"); break;
                 case 3: Console.WriteLine("Delete file"); break;
                 default: Menu.MainScreen(); break;
-                
             }
         }
     }

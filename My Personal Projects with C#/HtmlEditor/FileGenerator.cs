@@ -50,7 +50,7 @@ namespace HtmlEditor {
             char save = char.Parse(Console.ReadLine());
 
             if (save == 'y') {
-                SaveFile.SaveMenu(text.ToString());
+                SaveFile.SaveFileMenu(text.ToString());
             } 
             if (save == 'n') {
                 Menu.MainScreen();
