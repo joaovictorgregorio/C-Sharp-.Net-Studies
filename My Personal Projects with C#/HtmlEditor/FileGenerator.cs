@@ -7,19 +7,25 @@ namespace HtmlEditor {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Blue;
 
+            Thread.Sleep(200);
+            Console.WriteLine("Press [ESC] to exit");
             // Construindo as linhas
             Console.Write("+ ");
-            for(var i = 0; i < 100; i++) {
+            for(var i = 0; i < 60; i++) {
+                Thread.Sleep(5);
                 Console.Write("-");
             }
             Console.Write(" +");
             
-            Console.SetCursorPosition(41, 1);
-            Thread.Sleep(250);
+            Console.SetCursorPosition(21, 1);
+            Thread.Sleep(5);
             Console.WriteLine(" Generating New File ");
-            Console.SetCursorPosition(37, 2);
-            Thread.Sleep(20);
+            Console.SetCursorPosition(17, 2);
+            Thread.Sleep(10);
             Console.WriteLine("+ ------------------------- +");
+            Thread.Sleep(5);
+            Console.SetCursorPosition(23, 3);
+            Console.WriteLine(" Enter your text ");
 
             StartsFileGeneration();
         }
@@ -27,21 +33,31 @@ namespace HtmlEditor {
         public static void StartsFileGeneration() {
             Console.ForegroundColor = ConsoleColor.White;
 
-            var file = new StringBuilder();
+            var text = new StringBuilder();
 
             Console.WriteLine("");
-            Console.SetCursorPosition(0, 3);
+            Console.SetCursorPosition(0, 4);
 
             do {
-                file.Append(Console.ReadLine());
-                file.Append(Environment.NewLine);
+                text.Append(Console.ReadLine());
+                text.Append(Environment.NewLine);
             }
             while(Console.ReadKey().Key != ConsoleKey.Escape);
 
             Console.WriteLine("");
-            Console.Write("@Deseja salvar este arquivo: [yes or no] ");
+            Console.Write("@Deseja salvar este arquivo: [y or n] ");
         
-            // Planejar salvamento do arquivo...
+            char save = char.Parse(Console.ReadLine());
+
+            if (save == 'y') {
+                SaveFile.SaveMenu();
+            } 
+            if (save == 'n') {
+                Menu.MainScreen();
+            }
+            else {
+                InstructionsForUse.ChooseAnOption(0);
+            }
         }
     }
 }
