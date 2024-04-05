@@ -9,6 +9,8 @@ namespace StudiesMyApp
         {
             Console.Clear();
 
+            // STRINGS DETALHES
+
             /* GUID
 
             var id = Guid.NewGuid();
@@ -46,6 +48,7 @@ namespace StudiesMyApp
             */
 
             /*  STARTSWITH / ENDSWITH
+
             var text = "Este texto é um teste";
 
             Console.WriteLine(text.StartsWith("Este"));
@@ -117,7 +120,7 @@ namespace StudiesMyApp
             Console.WriteLine(textTrim.Trim());
             */
 
-            // STRINGBUILDER
+            /* STRINGBUILDER
 
             var text = new StringBuilder();
             text.Append("Este ");
@@ -127,6 +130,19 @@ namespace StudiesMyApp
             text.Append("teste");
 
             Console.WriteLine(text.ToString());
+            */
+            
+            // DATA DETALHES
+
+            /* INICIANDO COM DATAS
+
+            var data = new DateTime();
+            var date = DateTime.Now;
+            Console.WriteLine(data);
+            Console.WriteLine(date);
+            */
+
+            
         }
     }
 }
