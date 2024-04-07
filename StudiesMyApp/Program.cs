@@ -142,7 +142,39 @@ namespace StudiesMyApp
             Console.WriteLine(date);
             */
 
-            
+            /* OBTENDO VALORES DE DATA
+
+            var data = DateTime.Now;
+
+            Console.WriteLine(data);
+            Console.WriteLine($"Ano: {data.Year}");
+            Console.WriteLine($"Mês: {data.Month}");
+            Console.WriteLine($"Dia: {data.Day}");
+            Console.WriteLine($"Horas: {data.Hour}");
+            Console.WriteLine($"Minutos: {data.Minute}");
+            Console.WriteLine($"Segundos: {data.Second}");
+            */
+
+            /* FORMATANDO DATAS
+
+            var data = DateTime.Now;
+
+            var formatada = string.Format("{0:dd/MM/yyyy hh:mm:ss}", data);
+            Console.WriteLine(formatada);
+            */
+
+            /* PADRÕES DE FORMATAÇÃO
+
+            var data = DateTime.Now;
+
+            string formatadaR = string.Format("{0:r}", data); // Padrão usado em sistemas
+            string formatadaS = string.Format("{0:s}", data); // Usado muito no MondoDB, provável em outro banco de dados
+            string formatadaU = string.Format("{0:u}", data); // Formato muito visto no JSON
+
+            Console.WriteLine(formatadaR);
+            Console.WriteLine(formatadaS);
+            Console.WriteLine(formatadaU);
+            */
         }
     }
 }
