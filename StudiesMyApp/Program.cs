@@ -175,6 +175,28 @@ namespace StudiesMyApp
             Console.WriteLine(formatadaS);
             Console.WriteLine(formatadaU);
             */
+
+            /* ADICIONANDO VALORES
+
+            var data = DateTime.Now;
+
+            Console.WriteLine(data.AddDays(-8)); // Subtraindo dias
+            Console.WriteLine(data.AddDays(26)); // Adicionando dias
+            Console.WriteLine(data.AddMonths(2));
+            Console.WriteLine(data.AddYears(3));
+            */
+
+            /* COMPARANDO DATAS
+
+            var data = DateTime.Now;
+
+            // Não conseguimos comparar a estrutura toda, pois ela pega o objeto de forma completa comparando em milissegundos e frações de segundos, tornando a comparação sempre diferente e nunca igual, usado o método Year para pegar apenas o ano neste caso.
+            if(data.Year == DateTime.Now.Year) {
+                Console.WriteLine("São iguais!");
+            }
+
+            Console.WriteLine(data);
+            */
         }
     }
 }
