@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Data;
+using System.Globalization;
 using System.Text;
 
 namespace StudiesMyApp
@@ -197,6 +199,55 @@ namespace StudiesMyApp
 
             Console.WriteLine(data);
             */
+
+            /* CULTUREINFO
+
+            var br = new CultureInfo("pt-BR");
+            var enUs = new CultureInfo("en-US");
+            var de = new CultureInfo("de-DE");
+            var atualMaquina = CultureInfo.CurrentCulture; // Identifica a cultura da máquina que está rodando a aplicação.
+
+            Console.WriteLine(DateTime.Now.ToString("D", br));
+            Console.WriteLine(DateTime.Now.ToString("D", enUs));
+            Console.WriteLine(DateTime.Now.ToString("D", de));
+            Console.WriteLine(DateTime.Now.ToString("D", atualMaquina));
+            */
+
+            /* TIMEZONE
+
+            // Usar quando sua aplicação for utilizada de forma global.
+            var utcDate = DateTime.UtcNow;
+            
+            Console.WriteLine(DateTime.Now);
+            // Retorna data e horário do servidor.
+            Console.WriteLine(utcDate);
+
+            // Data e horário conforme o local da máquina.
+            Console.WriteLine(utcDate.ToLocalTime());
+            Console.WriteLine("+++=====+++=====+++");
+            Console.WriteLine("");
+
+            // (UTC+12:00) Auckland, Wellington
+            var timezoneAustralia = TimeZoneInfo.FindSystemTimeZoneById("Pacific/Auckland");
+            Console.WriteLine(timezoneAustralia);
+
+            // Data e horário na Australia.
+            var horaAustralia = TimeZoneInfo.ConvertTimeFromUtc(utcDate, timezoneAustralia);
+            Console.WriteLine(horaAustralia);
+            Console.WriteLine("+++=====+++=====+++");
+            Console.WriteLine("");
+
+            // Código para listar todos os fusos horários registrados no sistema.
+            var timeZones = TimeZoneInfo.GetSystemTimeZones();
+            foreach (var timezone in timeZones) {
+                Console.WriteLine(timezone.Id);
+                Console.WriteLine(timezone);
+                Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(utcDate, timezone));
+                Console.WriteLine("----------------------");
+            }
+            */
+            
+            
         }
     }
 }
