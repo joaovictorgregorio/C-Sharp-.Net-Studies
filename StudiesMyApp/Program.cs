@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Data;
 using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using static System.Console;
 
 namespace StudiesMyApp
 {
@@ -11,7 +13,7 @@ namespace StudiesMyApp
         {
             Console.Clear();
 
-            // STRINGS DETALHES
+            /*                                                        STRINGS DETALHES                                                     */
 
             /* GUID
 
@@ -134,7 +136,7 @@ namespace StudiesMyApp
             Console.WriteLine(text.ToString());
             */
             
-            // DATA DETALHES
+            /*                                                 DATAS DETALHES                                                            */
 
             /* INICIANDO COM DATAS
 
@@ -192,7 +194,7 @@ namespace StudiesMyApp
 
             var data = DateTime.Now;
 
-            // Não conseguimos comparar a estrutura toda, pois ela pega o objeto de forma completa comparando em milissegundos e frações de segundos, tornando a comparação sempre diferente e nunca igual, usado o método Year para pegar apenas o ano neste caso.
+            // Não conseguimos comparar a estrutura toda, pois ela pega o objeto de forma completa comparando em milissegundos e frações de segundos, tornando a comparação sempre diferente e nunca igual, usado a propriedade Year para pegar apenas o ano neste caso.
             if(data.Year == DateTime.Now.Year) {
                 Console.WriteLine("São iguais!");
             }
@@ -237,7 +239,7 @@ namespace StudiesMyApp
             Console.WriteLine("+++=====+++=====+++");
             Console.WriteLine("");
 
-            // Código para listar todos os fusos horários registrados no sistema.
+            // Código para listar todos os fusos horários registrados na biblioteca.
             var timeZones = TimeZoneInfo.GetSystemTimeZones();
             foreach (var timezone in timeZones) {
                 Console.WriteLine(timezone.Id);
@@ -247,7 +249,51 @@ namespace StudiesMyApp
             }
             */
             
-            
+            /* TIMESPAN
+
+            var timeSpan = new TimeSpan();
+            Console.WriteLine(timeSpan);
+
+            var timeSpanNanosegundos = new TimeSpan(1);
+            Console.WriteLine(timeSpanNanosegundos);
+
+            var timeSpanHoraMinutoSegundo = new TimeSpan(5, 12, 8);
+            Console.WriteLine(timeSpanHoraMinutoSegundo);
+
+            var timeSpanDiaHoraMinutoSegundo = new TimeSpan(3, 5, 12, 8);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo);
+
+            var timeSpanDiaHoraMinutoSegundoMilissegundo = new TimeSpan(3, 5, 12, 8, 250);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundoMilissegundo);
+
+            Console.WriteLine(timeSpanHoraMinutoSegundo - timeSpanDiaHoraMinutoSegundo);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Days);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Add(new TimeSpan(22, 0, 0)));
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Hours);
+            */
+
+            /* REVISÃO 
+
+            // Quantos dias tem 1°mês?
+            Console.WriteLine(DateTime.DaysInMonth(2024, 2));
+
+            // É fim de semana?
+            static bool IsWeekend(DayOfWeek today) {
+                return today == DayOfWeek.Saturday || today == DayOfWeek.Sunday;
+            }
+            Console.WriteLine(IsWeekend(DateTime.Now.DayOfWeek));
+
+            // Horário de verão.
+            Console.WriteLine(DateTime.Now.IsDaylightSavingTime());
+            */
+
+            /*                                                 MOEDAS DETALHES                                                            */
+
+            // TIPOS PARA MOEDAS
+
+            decimal valor = 10.33m;
+            WriteLine(valor.ToString(new CultureInfo("en-US")));
+            WriteLine(valor.ToString(CultureInfo.CreateSpecificCulture("pt-BR")));
         }
     }
 }
