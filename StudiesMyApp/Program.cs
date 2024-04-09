@@ -289,11 +289,45 @@ namespace StudiesMyApp
 
             /*                                                 MOEDAS DETALHES                                                            */
 
-            // TIPOS PARA MOEDAS
+            /* TIPOS PARA MOEDAS
 
+            // No caso de moedas sempre priorizar o decimal como tipo de variável, em casos muitos raros usamos outros tipos para performance, com o decimal conseguimos bastante precisão.
             decimal valor = 10.33m;
             WriteLine(valor.ToString(new CultureInfo("en-US")));
             WriteLine(valor.ToString(CultureInfo.CreateSpecificCulture("pt-BR")));
+            */
+
+            /* FORMATANDO MOEDAS
+            decimal valor = 1044551.443m;
+            
+            WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+            WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("de-DE")));
+            WriteLine("=========================================");
+            WriteLine(valor.ToString( 
+                "C",
+                CultureInfo.CreateSpecificCulture("pt-BR")
+            )); // Formato para moeda R$ 10,00.
+            WriteLine(valor.ToString("G", CultureInfo.CreateSpecificCulture("pt-BR"))); // Formato genérico
+            WriteLine(valor.ToString("E04", CultureInfo.CreateSpecificCulture("pt-BR"))); // Formato de número muito extenso
+            WriteLine(valor.ToString("F", CultureInfo.CreateSpecificCulture("pt-BR"))); // Melhora a precisão do número
+            WriteLine(valor.ToString("N", CultureInfo.CreateSpecificCulture("pt-BR"))); // Mostra o número sem formatação de moeda
+            WriteLine(valor.ToString("P", CultureInfo.CreateSpecificCulture("pt-BR"))); // Adiciona a porcentagem no número
+            */
+
+            /* MATH
+            decimal valor = 10.55m;
+
+            WriteLine(Math.Round(valor)); // Arredonda para o número inteiro mais próximo
+            WriteLine(Math.Ceiling(valor)); // Arredonda para o número inteiro acima
+            WriteLine(Math.Floor(valor)); // Arredonda para o número inteiro abaixo
+            */
+
+            // REVISÃO
+            decimal valor = 10.89m;
+
+            WriteLine(
+                string.Format("{0:C}", valor)
+            );
         }
     }
 }
