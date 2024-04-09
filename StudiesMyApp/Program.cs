@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Globalization;
+using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using static System.Console;
@@ -322,12 +323,39 @@ namespace StudiesMyApp
             WriteLine(Math.Floor(valor)); // Arredonda para o número inteiro abaixo
             */
 
-            // REVISÃO
+            /* REVISÃO
             decimal valor = 10.89m;
 
             WriteLine(
                 string.Format("{0:C}", valor)
             );
+            */
+
+            /*                                                       ARRAYS                                                            */
+
+            // ARRAYS
+
+            var myArray = new int[5] {29, 55, 99, 33, 45};
+
+            Thread.Sleep(200);
+            WriteLine(myArray[0]);
+            Thread.Sleep(200);
+            WriteLine(myArray[1]);
+            Thread.Sleep(200);
+            WriteLine(myArray[2]);
+            Thread.Sleep(200);
+            WriteLine(myArray[3]);
+            Thread.Sleep(200);
+            WriteLine(myArray[4]);
+
+            var myNewArray = new Teste[3];
+            myNewArray[0] = new Teste();
+
+            Console.WriteLine(myNewArray[0].Id);
+        }
+
+        struct Teste {
+            public int Id { get; set; }
         }
     }
 }
