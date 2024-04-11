@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Globalization;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using static System.Console;
 
-namespace StudiesMyApp
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+namespace StudiesMyApp {
+    class Program {
+        static void Main(string[] args) {
             Console.Clear();
 
             /*                                                        STRINGS DETALHES                                                     */
@@ -333,7 +331,7 @@ namespace StudiesMyApp
 
             /*                                                       ARRAYS                                                            */
 
-            // ARRAYS
+            /* ARRAYS
 
             var myArray = new int[5] {29, 55, 99, 33, 45};
 
@@ -356,6 +354,68 @@ namespace StudiesMyApp
 
         struct Teste {
             public int Id { get; set; }
+        }
+        */
+
+        /* PERCORRENDO UM ARRAY
+
+        var myArray = new int[5] { 100, 101, 102, 103, 104 };
+
+        for(var i = 0; i < myArray.Length; i++) {
+            Thread.Sleep(200);
+            WriteLine(myArray[i] += 1000);
+        }
+        */
+
+        /*                                                       EXCEPTIONS                                                            */
+
+        // EXCEPTIONS
+        var array = new int[3];
+
+        try {
+            // for(var i = 0; i < 10; i++) {
+            //     // System.IndexOutOfRangeException: Index was outside the bounds of the array.
+            //     Console.WriteLine(array[i]);
+            // }
+
+            Cadastrar("");
+        }
+        // Sempre tratar os erros do mais específico para o mais genérico. Caso seja invertido as situações, a própria IDE irá sinalizar como um erro, pois estaremos tratando o erro de forma muito genérica primeiro.
+        catch(IndexOutOfRangeException exOne) {
+            Console.WriteLine(exOne.InnerException);
+            Console.WriteLine(exOne.Message);
+            Console.WriteLine("Não encontrei o índice na lista!");
+        }
+        catch(MinhaException exTwo) {
+            Console.WriteLine(exTwo.InnerException);
+            Console.WriteLine(exTwo.Message);
+            Console.WriteLine(exTwo.QuandoAconteceu);
+            Console.WriteLine("Falha ao cadastrar o texto!");
+        }
+        // É possível usar vários catchs específicos para tratar os erros.
+        catch(Exception exThree) {
+            Console.WriteLine(exThree.InnerException);
+            Console.WriteLine(exThree.Message);
+            Console.WriteLine("Algo deu errado!");
+        }
+        // Sempre irá passar pelo finally, independente do que aconteça. Finally é ótimo para verificar se o arquivo está aberto e confirmar seu fechamento aqui.
+        finally {
+            Console.WriteLine("Chegou ao fim!");
+        }
+    }
+
+        private static void Cadastrar(string texto) {
+            // Caso a string seja vazia ou nula.
+            if(string.IsNullOrEmpty(texto)) {
+                throw new MinhaException(DateTime.Now);
+            }
+        }
+
+        public class MinhaException : Exception {
+            public MinhaException(DateTime date) {
+                QuandoAconteceu = date;
+            }
+            public DateTime QuandoAconteceu { get; set; }
         }
     }
 }
