@@ -1,0 +1,30 @@
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\bin\Debug\net8.0\Calculator.exe
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\bin\Debug\net8.0\Calculator.deps.json
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\bin\Debug\net8.0\Calculator.runtimeconfig.json
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\bin\Debug\net8.0\Calculator.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\bin\Debug\net8.0\Calculator.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.AssemblyInfoInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.AssemblyInfo.cs
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.sourcelink.json
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\refint\Calculator.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.genruntimeconfig.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso-Balta-C#\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\ref\Calculator.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\bin\Debug\net8.0\Calculator.exe
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\bin\Debug\net8.0\Calculator.deps.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\bin\Debug\net8.0\Calculator.runtimeconfig.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\bin\Debug\net8.0\Calculator.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\bin\Debug\net8.0\Calculator.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.AssemblyInfoInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.AssemblyInfo.cs
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.sourcelink.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\refint\Calculator.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\Calculator.genruntimeconfig.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Calculator\obj\Debug\net8.0\ref\Calculator.dll
