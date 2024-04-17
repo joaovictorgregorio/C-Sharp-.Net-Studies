@@ -1,0 +1,15 @@
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\obj\Debug\net8.0\PaymentsTwo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\obj\Debug\net8.0\PaymentsTwo.AssemblyInfoInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\obj\Debug\net8.0\PaymentsTwo.AssemblyInfo.cs
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\obj\Debug\net8.0\PaymentsTwo.csproj.CoreCompileInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\obj\Debug\net8.0\PaymentsTwo.sourcelink.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\bin\Debug\net8.0\PaymentsTwo.exe
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\bin\Debug\net8.0\PaymentsTwo.deps.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\bin\Debug\net8.0\PaymentsTwo.runtimeconfig.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\bin\Debug\net8.0\PaymentsTwo.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\bin\Debug\net8.0\PaymentsTwo.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\obj\Debug\net8.0\PaymentsTwo.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\obj\Debug\net8.0\refint\PaymentsTwo.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\obj\Debug\net8.0\PaymentsTwo.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\obj\Debug\net8.0\PaymentsTwo.genruntimeconfig.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentsTwo\obj\Debug\net8.0\ref\PaymentsTwo.dll
