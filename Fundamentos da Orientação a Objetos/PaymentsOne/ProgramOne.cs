@@ -53,17 +53,17 @@ class Pagamento {
 // Aplicado conceito de herança. Neste caso, PagamentoBoleto herda de Pagamento.
 class PagamentoBoleto : Pagamento {
     public string NumeroBoleto;
-    // Quando é usado Virtual na classe Pagamento que é o pai, e Override na classe PagamentoBoleto que é o filho. O método Pagar() está sendo sobreescrito, dando uma nova função para este mesmo método. Conceito do polimorfismo.
+    // Neste caso, é usado Virtual no método Pagar() da classe Pagamento que é o pai, e Override na classe PagamentoBoleto que é o filho. O método Pagar() está sendo sobreescrito, dando uma nova função para este mesmo método. Conceito do polimorfismo.
     public override void Pagar() {
         // Regra do boleto
     }
 
     void Teste() {
-        // Para verificar as propriedades e métodos disponíveis do pai, neste caso Pagamento, usar a palavra BASE.
+        // Caso queira verificar as propriedades e métodos disponíveis do pai Pagamento, é só usar a palavra BASE e logo a IDE apresentará as opções.
     }
 }
 
-// Não é possível herança múltipla no C#, apenas Pai e filho, sendo heranças únicas. Sem limite de uso, processo pode ser repetido quantas vezes for necessário.
+// Não é possível herança múltipla no C#, apenas pai e filho, sendo heranças únicas. Sem limite de uso, o processo pode ser repetido quantas vezes for necessário.
 class PagamentoCartaoCredito : Pagamento {
     public string Numero;
 

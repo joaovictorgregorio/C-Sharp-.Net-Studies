@@ -1,17 +1,24 @@
-﻿/* Aqui será abordado a partir de (Tipos complexos) até ... */
+﻿/* Aqui será abordado a partir de (Tipos complexos) até (Métodos) */
 
 Console.Clear();
 
-// Execução principal do código.
-var pagamento = new Pagamento();
+// Execução principal do código...
+var pagamento = new Pagamento(DateTime.Now);
 pagamento.NumeroBoleto = "01548411512";
 Console.WriteLine(pagamento.NumeroBoleto);
 
 pagamento.DataPagamento = DateTime.Now;
 Console.WriteLine(pagamento.DataPagamento);
 
+Console.WriteLine("");
+pagamento.Pagar("56");
 
 public class Pagamento {
+    // Método construtor, usado comando ctor para estruturar na IDE. O método construtor usa o mesmo nome da classe Pagamento, ele é chamado quando é instânciado. var pagamento = new Pagamento().
+    public Pagamento(DateTime vencimento) {
+        Console.WriteLine("Iniciando o pagamento");
+        DataPagamento = DateTime.Now;
+    }
     public string NumeroBoleto;
     // Get e Set são acessores que podem atribuir ou receber valores, a diferença entre propriedades e variáveis é exatamente está característica do Get e Set.
     public DateTime Vencimento { get; set; }
@@ -32,9 +39,23 @@ public class Pagamento {
             _dataPagamento = value; 
         }
     }
-    
     Address BillingAddress;
-    void Pagar() { }
+    public virtual void Pagar(string numero) { 
+        Console.WriteLine("Pagar com dinheiro");
+    }
+    // Métodos repetidos é chamado de sobrecarga de método, eles possuem nomes iguais, porém eles tem assinaturas diferentes, são informados parâmetros distintos.
+    public void Pagar(string numero, DateTime vencimento) { }
+    public void Pagar(string numero, DateTime vencimento, bool pagarAposVencimento = false) { }
+}
+
+public class PagamentoCartao : Pagamento {
+    public PagamentoCartao(DateTime vencimento) : base(vencimento) {
+        
+    }
+    public override void Pagar(string numero) {
+        base.Pagar(numero);
+        Console.WriteLine("Pagar com Cartão de Crédito/Débito");
+    }
 }
 
 public class Address {

@@ -1,0 +1,15 @@
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\bin\Debug\net8.0\PaymentThree.exe
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\bin\Debug\net8.0\PaymentThree.deps.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\bin\Debug\net8.0\PaymentThree.runtimeconfig.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\bin\Debug\net8.0\PaymentThree.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\bin\Debug\net8.0\PaymentThree.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\obj\Debug\net8.0\PaymentThree.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\obj\Debug\net8.0\PaymentThree.AssemblyInfoInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\obj\Debug\net8.0\PaymentThree.AssemblyInfo.cs
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\obj\Debug\net8.0\PaymentThree.csproj.CoreCompileInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\obj\Debug\net8.0\PaymentThree.sourcelink.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\obj\Debug\net8.0\PaymentThree.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\obj\Debug\net8.0\refint\PaymentThree.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\obj\Debug\net8.0\PaymentThree.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\obj\Debug\net8.0\PaymentThree.genruntimeconfig.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentThree\obj\Debug\net8.0\ref\PaymentThree.dll

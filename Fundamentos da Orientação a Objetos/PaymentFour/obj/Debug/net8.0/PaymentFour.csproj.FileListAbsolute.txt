@@ -1,0 +1,15 @@
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\obj\Debug\net8.0\PaymentFour.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\obj\Debug\net8.0\PaymentFour.AssemblyInfoInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\obj\Debug\net8.0\PaymentFour.AssemblyInfo.cs
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\obj\Debug\net8.0\PaymentFour.csproj.CoreCompileInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\obj\Debug\net8.0\PaymentFour.sourcelink.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\bin\Debug\net8.0\PaymentFour.exe
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\bin\Debug\net8.0\PaymentFour.deps.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\bin\Debug\net8.0\PaymentFour.runtimeconfig.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\bin\Debug\net8.0\PaymentFour.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\bin\Debug\net8.0\PaymentFour.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\obj\Debug\net8.0\PaymentFour.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\obj\Debug\net8.0\refint\PaymentFour.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\obj\Debug\net8.0\PaymentFour.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\obj\Debug\net8.0\PaymentFour.genruntimeconfig.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\PaymentFour\obj\Debug\net8.0\ref\PaymentFour.dll
