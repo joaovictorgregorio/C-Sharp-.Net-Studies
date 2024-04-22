@@ -1,0 +1,15 @@
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\bin\Debug\net8.0\Delegates.exe
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\bin\Debug\net8.0\Delegates.deps.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\bin\Debug\net8.0\Delegates.runtimeconfig.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\bin\Debug\net8.0\Delegates.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\bin\Debug\net8.0\Delegates.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\obj\Debug\net8.0\Delegates.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\obj\Debug\net8.0\Delegates.AssemblyInfoInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\obj\Debug\net8.0\Delegates.AssemblyInfo.cs
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\obj\Debug\net8.0\Delegates.csproj.CoreCompileInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\obj\Debug\net8.0\Delegates.sourcelink.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\obj\Debug\net8.0\Delegates.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\obj\Debug\net8.0\refint\Delegates.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\obj\Debug\net8.0\Delegates.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\obj\Debug\net8.0\Delegates.genruntimeconfig.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Delegates\obj\Debug\net8.0\ref\Delegates.dll

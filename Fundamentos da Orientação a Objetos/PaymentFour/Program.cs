@@ -1,7 +1,26 @@
-﻿/* Aqui será abordado a partir de (Partial Class) até ... */
+﻿/* Aqui será abordado a partir de (Partial Class) até (Comparando Objetos) */
 
 Console.Clear();
 var pagamento = new PagamentoBoleto();
+
+// var pessoa = new Pessoa("");
+// var pessoaFisica = new PessoaFisica();
+// var pessoaJuridica = new PessoaJuridica();
+
+// // Realização do Downcast. Converter de cima para baixo. Torna classe-pai para classe-filha.
+// pessoaFisica = (PessoaFisica)pessoa;
+// pessoaJuridica = (PessoaJuridica)pessoa;
+
+// Comparando objetos.
+var pessoaA = new Pessoa(1, "Joao Victor Gregorio");
+var pessoaB = new Pessoa(1, "Joao Victor Gregorio");
+
+// Será retornado False, pois seus endereços na memória são diferentes. Desta forma, nunca irá funcionar para comparação de objetos.
+Console.WriteLine(pessoaA == pessoaB);
+
+// Comparando objetos de forma correta.
+Console.WriteLine(pessoaA.Equals(pessoaB));
+
 
 // Abstract vai negar o instânciamento desta classe, não poderá ser instânciada. Ela só pode ser herdada.
 public abstract class Pagamento : IPagamento
@@ -46,3 +65,32 @@ public interface IPagamento
 
     void Pagar(double valor);
 }
+
+// O conceito Downcast, converter de cima para baixo. Torna classe-pai para classe-filha.
+// IEquatable<Pessoa> é a maneira mais correta para comparar objetos.
+public class Pessoa : IEquatable<Pessoa>
+{
+    public Pessoa(int id, string nome)
+    {
+        Id = id;
+        Nome = nome;
+    }
+    public string Nome { get; set; }
+    public int Id { get; set; }
+
+    public bool Equals(Pessoa? other)
+    {
+        return Id == other.Id;
+    }
+}
+
+// O conceito de Upcast ou Upcasting é que, como esta classe-filha tem todas as propriedades que a classe-pai tem, podemos dizer que uma classe-filha também é uma classe-pai.
+// public class PessoaFisica : Pessoa
+// {
+//     public string CPF { get; set; }
+// }
+
+// public class PessoaJuridica : Pessoa
+// {
+//     public string CNPJ { get; set; }
+// }
