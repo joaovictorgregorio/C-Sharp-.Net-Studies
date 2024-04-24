@@ -1,0 +1,15 @@
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\bin\Debug\net8.0\Listas.exe
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\bin\Debug\net8.0\Listas.deps.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\bin\Debug\net8.0\Listas.runtimeconfig.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\bin\Debug\net8.0\Listas.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\bin\Debug\net8.0\Listas.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\obj\Debug\net8.0\Listas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\obj\Debug\net8.0\Listas.AssemblyInfoInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\obj\Debug\net8.0\Listas.AssemblyInfo.cs
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\obj\Debug\net8.0\Listas.csproj.CoreCompileInputs.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\obj\Debug\net8.0\Listas.sourcelink.json
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\obj\Debug\net8.0\Listas.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\obj\Debug\net8.0\refint\Listas.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\obj\Debug\net8.0\Listas.pdb
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\obj\Debug\net8.0\Listas.genruntimeconfig.cache
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Fundamentos da Orientação a Objetos\Listas\obj\Debug\net8.0\ref\Listas.dll
