@@ -6,7 +6,7 @@ using CursoBalta.ContextoDoConteudo.Enumeradores;
 
 namespace CursoBalta.ContextoDoConteudo
 {
-    public class Aula
+    public class Aula : Base
     {
         public int Ordem { get; set; }
         public string Titulo { get; set; }

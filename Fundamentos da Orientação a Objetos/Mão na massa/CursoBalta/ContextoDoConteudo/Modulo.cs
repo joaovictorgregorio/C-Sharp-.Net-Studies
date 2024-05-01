@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CursoBalta.ContextoDoConteudo
 {
-    public class Modulo
+    public class Modulo : Base
     {
         public Modulo()
         {
