@@ -1,6 +1,7 @@
 USE [Curso] -- Garante que eu faça as alterações no Banco de Dados correto que realmente precise modificar.
 
 DROP TABLE [Aluno]
+
 CREATE TABLE [Aluno] (
     [Id] INT NOT NULL,
     [Nome] NVARCHAR(80) NOT NULL,
