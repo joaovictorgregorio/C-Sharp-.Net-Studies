@@ -1,9 +1,9 @@
-DROP TABLE [Curso]
+DROP TABLE [Cursos]
 
 CREATE INDEX [IX_Aluno_Email] ON [Aluno]([Email])
 DROP INDEX [IX_Aluno_Email] ON [Aluno]
 
-USE [Curso]
+USE [Cursos]
 CREATE TABLE [Curso] (
     [Id] INT NOT NULL IDENTITY(1, 1),
     [Nome] NVARCHAR(80) NOT NULL,

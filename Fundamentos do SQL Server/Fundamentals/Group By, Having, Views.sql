@@ -8,7 +8,7 @@ CREATE OR ALTER VIEW vwContagemCursosPorCategoria AS
         INNER JOIN [Curso] ON [Curso].[CategoriaId] = [Categoria].[Id]
     GROUP BY
         [Categoria].[Id],
-        [Categoria].[Nome],
+        [Categoria].[Nome]  ,
         [Curso].[CategoriaId]
     HAVING
         COUNT([Curso].[CategoriaId]) > 1
