@@ -5,6 +5,7 @@ C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies
 C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Acesso a dados com .NET, C#, Dapper e SQL Server\BaltaDataAcess\bin\Debug\net8.0\BaltaDataAcess.pdb
 C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Acesso a dados com .NET, C#, Dapper e SQL Server\BaltaDataAcess\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Acesso a dados com .NET, C#, Dapper e SQL Server\BaltaDataAcess\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Acesso a dados com .NET, C#, Dapper e SQL Server\BaltaDataAcess\bin\Debug\net8.0\Dapper.dll
 C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Acesso a dados com .NET, C#, Dapper e SQL Server\BaltaDataAcess\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Acesso a dados com .NET, C#, Dapper e SQL Server\BaltaDataAcess\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 C:\Users\Joao Victor Gregorio\Documents\Curso Balta C# .NET\C-Sharp-.Net-Studies\Acesso a dados com .NET, C#, Dapper e SQL Server\BaltaDataAcess\bin\Debug\net8.0\Microsoft.Identity.Client.dll

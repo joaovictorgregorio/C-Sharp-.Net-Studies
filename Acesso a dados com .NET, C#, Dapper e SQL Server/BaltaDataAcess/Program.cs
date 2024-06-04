@@ -1,28 +1,84 @@
 ﻿using System.Net;
+using BaltaDataAcess.Models;
+using Dapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.Identity.Client;
 
-const string connectionString =
-    "Server=localhost,1433;Database=balta-io;User ID=sa;Password=1q2w3e4r@#$;TrustServerCertificate=True";
-
-using (var connection = new SqlConnection(connectionString))
+internal class Program
 {
-    Console.WriteLine("Conectado ao banco de dados!");
-    connection.Open();
-
-    using (var command = new SqlCommand())
+    private static void Main(string[] args)
     {
-        command.Connection = connection;
-        command.CommandType = System.Data.CommandType.Text;
-        command.CommandText = "SELECT [Id], [Title] FROM [Category]";
+        const string connectionString =
+            "Server=localhost,1433;Database=balta-io;User ID=sa;Password=1q2w3e4r@#$;TrustServerCertificate=True";
 
-        var reader = command.ExecuteReader();
-        while (reader.Read())
+        // Execução Dapper
+        using (var connection = new SqlConnection(connectionString))
         {
-            Console.WriteLine(
-                $"{reader.GetGuid(0)} - {reader.GetString(1)}");
+            ListCategory(connection);
         }
     }
-}
 
-Console.WriteLine("Hello, World!");
+    static void ListCategory(SqlConnection connection)
+    {
+        var categories = connection.Query<Category>(
+                "SELECT [Id], [Title] FROM [Category]");
+
+        foreach (var item in categories)
+        {
+            Console.WriteLine($"{item.Id} - {item.Title}");
+        }
+    }
+
+    static void InsertCategory(SqlConnection connection)
+    {
+        var category = new Category();
+        category.Id = Guid.NewGuid();
+        category.Title = "Amazon AWS";
+        category.Url = "amazon";
+        category.Summary = "AWS Cloud";
+        category.Order = 8;
+        category.Description = "Categoria destinada a serviços do AWS";
+        category.Featured = false;
+
+
+        var insertSql = @"INSERT INTO 
+                    [Category]
+                VALUES(
+                    @Id, 
+                    @Title, 
+                    @Url, 
+                    @Summary, 
+                    @Order, 
+                    @Description,
+                    @Featured)";
+
+        var rows = connection.Execute(insertSql, new
+        {
+            category.Id,
+            category.Title,
+            category.Url,
+            category.Summary,
+            category.Order,
+            category.Description,
+            category.Featured
+        });
+        if (rows == 1)
+            Console.WriteLine($"{rows} linha afetada");
+        else
+            Console.WriteLine($"{rows} linhas afetadas");
+    }
+
+    static void UpdateCategory(SqlConnection connection)
+    {
+        var updateSql = @"UPDATE 
+                            [Category] 
+                        SET 
+                            [Title]=@Title 
+                        WHERE 
+                            [Id]=@Id";
+
+        var rows = connection.Execute(updateSql, new {
+            
+        });
+    }
+}

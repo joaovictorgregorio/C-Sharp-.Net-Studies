@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "q91aBSrxnM4=",
+  "dgSpecHash": "14Q5NiWI32E=",
   "success": true,
   "projectFilePath": "C:\\Users\\Joao Victor Gregorio\\Documents\\Curso Balta C# .NET\\C-Sharp-.Net-Studies\\Acesso a dados com .NET, C#, Dapper e SQL Server\\BaltaDataAcess\\BaltaDataAcess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joao Victor Gregorio\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Joao Victor Gregorio\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",
+    "C:\\Users\\Joao Victor Gregorio\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\Joao Victor Gregorio\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Joao Victor Gregorio\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Joao Victor Gregorio\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.1\\microsoft.data.sqlclient.5.2.1.nupkg.sha512",
