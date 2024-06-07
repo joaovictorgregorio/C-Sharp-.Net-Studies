@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System.Data;
+using System.Net;
 using BaltaDataAcess.Models;
 using Dapper;
 using Microsoft.Data.SqlClient;
@@ -15,8 +16,12 @@ internal class Program
         using (var connection = new SqlConnection(connectionString))
         {
             // CreateManyCategories(connection);
-            DeleteManyCategories(connection);
-            ListCategory(connection);
+            // DeleteManyCategories(connection);
+            // ExecuteProcedureDeleteStudent(connection);
+            // ListStudent(connection);
+            // ListCategory(connection);
+            // ExecuteReadProcedureGetCoursesByCategory(connection);
+            ExecuteScalar(connection);
         }
     }
 
@@ -28,6 +33,23 @@ internal class Program
         foreach (var item in categories)
         {
             Console.WriteLine($"{item.Id} - {item.Title}");
+        }
+    }
+
+    static void ListStudent(SqlConnection connection)
+    {
+        var selectStudentsSql =
+            connection.Query<Student>(
+                                    @"SELECT
+                                        *    
+                                    FROM
+                                        [Student]");
+
+
+        foreach (var item in selectStudentsSql)
+        {
+            Console.WriteLine(
+                $"{item.Id} | {item.Name} | {item.Email} | {item.Phone}");
         }
     }
 
@@ -170,5 +192,73 @@ internal class Program
         });
 
         Console.WriteLine($"{rows} linhas deletadas");
+    }
+
+    static void ExecuteProcedureDeleteStudent(SqlConnection connection)
+    {
+        var procedureSql = "[spDeleteStudent]";
+        var parameters =
+            new
+            {
+                StudentId = "a88bbf39-dc20-411e-9fdb-29dfd4dd73c5"
+            };
+
+        var rows = connection.Execute(
+            procedureSql, parameters, commandType: CommandType.StoredProcedure);
+
+        Console.WriteLine($"{rows} linha deletada!");
+    }
+
+    static void ExecuteReadProcedureGetCoursesByCategory(SqlConnection connection)
+    {
+        var procedureSql = "[spGetCoursesByCategory]";
+        var parameters = new { CategoryId = "af3407aa-11ae-4621-a2ef-2028b85507c4" };
+        var courses = connection.Query(
+            procedureSql,
+            parameters,
+            commandType: CommandType.StoredProcedure);
+
+        foreach (var item in courses)
+        {
+            Console.WriteLine($"{item.Id}");
+        }
+    }
+
+    static void ExecuteScalar(SqlConnection connection)
+    {
+        var category = new Category();
+        category.Title = "Amazon AWS";
+        category.Url = "amazon";
+        category.Summary = "AWS Cloud";
+        category.Order = 8;
+        category.Description = "Categoria destinada a serviços do AWS";
+        category.Featured = false;
+
+
+        var insertSql = @"
+                INSERT INTO 
+                    [Category]
+                OUTPUT inserted.[Id]
+                VALUES(
+                    NEWID(), 
+                    @Title, 
+                    @Url, 
+                    @Summary, 
+                    @Order, 
+                    @Description,
+                    @Featured
+                )";
+
+        var id = connection.ExecuteScalar<Guid>(insertSql, new
+        {
+            category.Title,
+            category.Url,
+            category.Summary,
+            category.Order,
+            category.Description,
+            category.Featured
+        });
+
+        Console.Write($"A categoria adicionada foi: {id}");
     }
 }
