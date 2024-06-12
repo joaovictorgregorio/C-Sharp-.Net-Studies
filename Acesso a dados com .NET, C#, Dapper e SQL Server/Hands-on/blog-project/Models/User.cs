@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using Dapper.Contrib.Extensions;
+using TableAttribute = Dapper.Contrib.Extensions.TableAttribute;
 
 namespace blog_project.Models
 {
@@ -10,6 +12,8 @@ namespace blog_project.Models
     [Table("[User]")]
     public class User
     {
+        public User()
+            => Roles = new List<Role>();
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
@@ -17,5 +21,7 @@ namespace blog_project.Models
         public string Bio { get; set; }
         public string Image { get; set; }
         public string Slug { get; set; }
+        [Write(false)]
+        public List<Role> Roles { get; set; }
     }
 }
