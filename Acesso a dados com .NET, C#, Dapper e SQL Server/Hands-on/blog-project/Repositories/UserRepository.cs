@@ -10,10 +10,9 @@ namespace blog_project.Repositories
 {
     public class UserRepository : Repository<User>
     {
-        private readonly SqlConnection _connection;
-
-        public UserRepository(SqlConnection connection) : base(connection)
-            => _connection = connection;
+        public UserRepository(SqlConnection connection)
+            : base(connection)
+            => Database.Connection = connection;
 
         public List<User> GetWithRoles()
         {
@@ -29,7 +28,7 @@ namespace blog_project.Repositories
                     [Role] ON [UserRole].[RoleId] = [Role].[Id]";
 
             var users = new List<User>();
-            var item = _connection.Query<User, Role, User>(
+            var item = Database.Connection.Query<User, Role, User>(
             query,
             (user, role) =>
             {

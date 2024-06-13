@@ -9,30 +9,28 @@ namespace blog_project.Repositories
 {
     public class Repository<T> where T : class
     {
-        private readonly SqlConnection _connection;
-
         public Repository(SqlConnection connection)
-            => _connection = connection;
+            => Database.Connection = connection;
 
         public IEnumerable<T> Get()
-            => _connection.GetAll<T>();
+            => Database.Connection.GetAll<T>();
 
         public T Get(int id)
-            => _connection.Get<T>(id);
+            => Database.Connection.Get<T>(id);
 
         public void Create(T model)
-            => _connection.Insert<T>(model);
+            => Database.Connection.Insert<T>(model);
 
         public void Update(T model)
-            => _connection.Update<T>(model);
+            => Database.Connection.Update<T>(model);
 
         public void Delete(T model)
-            => _connection.Delete<T>(model);
+            => Database.Connection.Delete<T>(model);
 
         public void Delete(int id)
         {
-            var model = _connection.Get<T>(id);
-            _connection.Delete<T>(model);
+            var model = Database.Connection.Get<T>(id);
+            Database.Connection.Delete<T>(model);
         }
     }
 }
