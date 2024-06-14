@@ -20,6 +20,7 @@ namespace blog_project.Screens.TagScreens
             Console.WriteLine("2 - Cadastrar tags");
             Console.WriteLine("3 - Atualizar tags");
             Console.WriteLine("4 - Excluir tags");
+            Console.WriteLine("5 - Voltar para o menu principal");
             Console.WriteLine();
             Console.WriteLine();
 
@@ -38,6 +39,9 @@ namespace blog_project.Screens.TagScreens
                     break;
                 case 4:
                     DeleteTagScreen.Load();
+                    break;
+                case 5:
+                    Program.Load();
                     break;
                 default: Load(); break;
             }

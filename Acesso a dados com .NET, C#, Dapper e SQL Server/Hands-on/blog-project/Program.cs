@@ -2,7 +2,9 @@
 using blog_project;
 using blog_project.Models;
 using blog_project.Repositories;
+using blog_project.Screens.CategoryScreens;
 using blog_project.Screens.TagScreens;
+using blog_project.Screens.UserScreens;
 using Dapper.Contrib.Extensions;
 using Microsoft.Data.SqlClient;
 
@@ -24,7 +26,7 @@ internal class Program
         Database.Connection.Close();
     }
 
-    private static void Load()
+    public static void Load()
     {
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.White;
@@ -39,21 +41,22 @@ internal class Program
         Console.WriteLine("5 - Vincular perfil/usuário");
         Console.WriteLine("6 - Vincular post/tag");
         Console.WriteLine("7 - Relatórios");
-        Console.WriteLine();
-        Console.WriteLine();
+        Console.WriteLine("8 - Sair do sistema \n \n");
 
+        Console.Write("Escolha uma opção: ");
         var option = short.Parse(Console.ReadLine()!);
+
 
         switch (option)
         {
             case 1:
-                // UserScreen.Load();
+                MenuUserScreen.Load();
                 break;
             case 2:
                 // ProfileScreen.Load();
                 break;
             case 3:
-                // CategoryScreen.Load();
+                MenuCategoryScreen.Load();
                 break;
             case 4:
                 MenuTagScreen.Load();
@@ -63,6 +66,10 @@ internal class Program
             case 6:
                 break;
             case 7:
+                break;
+            case 8:
+                Console.Clear();
+                System.Environment.Exit(0);
                 break;
             default: Load(); break;
         }

@@ -2,45 +2,42 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using blog_project.Models;
 using blog_project.Repositories;
 
-namespace blog_project.Screens.TagScreens
+namespace blog_project.Screens.UserScreens
 {
-    public class DeleteTagScreen
+    public class DeleteUserScreen
     {
         public static void Load()
         {
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.Write(
-                "Digite o id para deletar uma tag: ");
-            Console.WriteLine("-----------------");
+            Console.WriteLine("Deletar um usuário");
+            Console.WriteLine("------------------");
 
             Console.Write("Id: ");
             var id = Console.ReadLine();
 
             Delete(int.Parse(id));
             Console.ReadKey();
-            MenuTagScreen.Load();
+            MenuUserScreen.Load();
         }
 
         public static void Delete(int id)
         {
             try
             {
-                var repository = new Repository<Tag>(
+                var repository = new UserRepository(
                     Database.Connection
                 );
                 repository.Delete(id);
                 Console.WriteLine(
-                    "Tag deletada com sucesso!"
+                    "\nUsuário deletado com sucesso!"
                 );
             }
             catch (Exception ex)
             {
                 Console.WriteLine(
-                    $"Erro ao deletar a tag: {ex.Message}"
+                    $"Erro ao deletar o usuário: {ex.Message}"
                 );
             }
         }

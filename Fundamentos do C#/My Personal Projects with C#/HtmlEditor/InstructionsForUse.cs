@@ -1,8 +1,11 @@
 using System.ComponentModel;
 
-namespace HtmlEditor {
-    public static class InstructionsForUse {
-        public static void MainScreenOptions() {
+namespace HtmlEditor
+{
+    public static class InstructionsForUse
+    {
+        public static void MainScreenOptions()
+        {
             Console.ForegroundColor = ConsoleColor.White;
 
             // Adiciona a descrição na posição deseja, neste caso, coluna posição 11, na linha 1
@@ -33,14 +36,17 @@ namespace HtmlEditor {
             var option = short.Parse(Console.ReadLine());
             ChooseAnOption(option);
         }
-        
-        public static void ChooseAnOption(short option) {
-            switch(option) {
-                case 0: {
-                    Console.Clear();
-                    Environment.Exit(0);
-                    break;
-                }
+
+        public static void ChooseAnOption(short option)
+        {
+            switch (option)
+            {
+                case 0:
+                    {
+                        Console.Clear();
+                        Environment.Exit(0);
+                        break;
+                    }
                 case 1: FileGenerator.FileGeneratorHomeScreen(); break;
                 case 2: OpenFile.OpenFileMenu(); break;
                 case 3: Console.WriteLine("Delete file"); break;

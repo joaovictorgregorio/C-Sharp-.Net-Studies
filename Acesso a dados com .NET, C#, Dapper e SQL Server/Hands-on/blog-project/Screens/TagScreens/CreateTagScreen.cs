@@ -22,7 +22,7 @@ namespace blog_project.Screens.TagScreens
             Console.Write("Slug: ");
             var slug = Console.ReadLine();
 
-            Create(new Tag
+            CreateTag(new Tag
             {
                 Name = name,
                 Slug = slug
@@ -31,7 +31,7 @@ namespace blog_project.Screens.TagScreens
             MenuTagScreen.Load();
         }
 
-        public static void Create(Tag tag)
+        public static void CreateTag(Tag tag)
         {
             try
             {
@@ -39,7 +39,8 @@ namespace blog_project.Screens.TagScreens
                     Database.Connection
                 );
                 repository.Create(tag);
-                Console.WriteLine("Tag cadastrada com sucesso!");
+                Console.WriteLine(
+                    "Tag cadastrada com sucesso!");
             }
             catch (Exception ex)
             {
