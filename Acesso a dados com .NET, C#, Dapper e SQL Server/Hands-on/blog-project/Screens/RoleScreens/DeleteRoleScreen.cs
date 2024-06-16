@@ -5,41 +5,36 @@ using System.Threading.Tasks;
 using blog_project.Models;
 using blog_project.Repositories;
 
-namespace blog_project.Screens.TagScreens
+namespace blog_project.Screens.RoleScreens
 {
-    public class DeleteTagScreen
+    public class DeleteRoleScreen
     {
         public static void Load()
         {
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.Write(
-                "Digite o id para deletar uma tag: ");
-            Console.WriteLine("-----------------");
+            Console.WriteLine("Deletar um perfil");
+            Console.WriteLine("---------------------");
 
             Console.Write("Id: ");
             var id = Console.ReadLine();
 
             Delete(int.Parse(id));
             Console.ReadKey();
-            MenuTagScreen.Load();
+            MenuRoleScreen.Load();
         }
 
         public static void Delete(int id)
         {
             try
             {
-                var repository = new Repository<Tag>(
-                    Database.Connection
-                );
+                var repository = new Repository<Role>(Database.Connection);
                 repository.Delete(id);
-                Console.WriteLine("Tag deletada com sucesso!");
+                Console.WriteLine("Perfil deletado com sucesso!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine(
-                    $"Erro ao deletar a tag: {ex.Message}"
-                );
+                Console.WriteLine("Ocorreu um erro ao deletar o perfil!");
+                Console.WriteLine(ex.Message);
             }
         }
     }

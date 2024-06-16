@@ -20,9 +20,7 @@ namespace blog_project.Screens.TagScreens
             Console.WriteLine("2 - Cadastrar tags");
             Console.WriteLine("3 - Atualizar tags");
             Console.WriteLine("4 - Excluir tags");
-            Console.WriteLine("5 - Voltar para o menu principal");
-            Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine("5 - Voltar ao menu principal \n \n");
 
             var option = short.Parse(Console.ReadLine());
 

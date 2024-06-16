@@ -3,10 +3,12 @@ using blog_project;
 using blog_project.Models;
 using blog_project.Repositories;
 using blog_project.Screens.CategoryScreens;
+using blog_project.Screens.RoleScreens;
 using blog_project.Screens.TagScreens;
 using blog_project.Screens.UserScreens;
 using Dapper.Contrib.Extensions;
 using Microsoft.Data.SqlClient;
+using Microsoft.VisualBasic;
 
 internal class Program
 {
@@ -45,15 +47,18 @@ internal class Program
 
         Console.Write("Escolha uma opção: ");
         var option = short.Parse(Console.ReadLine()!);
+        Options(option);
+    }
 
-
+    private static void Options(short option)
+    {
         switch (option)
         {
             case 1:
                 MenuUserScreen.Load();
                 break;
             case 2:
-                // ProfileScreen.Load();
+                MenuRoleScreen.Load();
                 break;
             case 3:
                 MenuCategoryScreen.Load();
