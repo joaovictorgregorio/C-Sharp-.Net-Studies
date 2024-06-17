@@ -12,5 +12,6 @@ namespace blog_project.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Slug { get; set; }
+        public virtual ICollection<UserRole> UserRoles { get; set; }
     }
 }
