@@ -23,6 +23,5 @@ namespace blog_project.Models
         public string Slug { get; set; }
         [Write(false)]
         public List<Role> Roles { get; set; }
-        public virtual ICollection<UserRole> UserRoles { get; set; }
     }
 }

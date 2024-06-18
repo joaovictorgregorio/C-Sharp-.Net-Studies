@@ -5,6 +5,7 @@ using blog_project.Repositories;
 using blog_project.Screens.CategoryScreens;
 using blog_project.Screens.RoleScreens;
 using blog_project.Screens.TagScreens;
+using blog_project.Screens.UserRoleScreens;
 using blog_project.Screens.UserScreens;
 using Dapper.Contrib.Extensions;
 using Microsoft.Data.SqlClient;
@@ -67,6 +68,7 @@ internal class Program
                 MenuTagScreen.Load();
                 break;
             case 5:
+                new AssociateUserRoleScreen(new UserRepository(Database.Connection)).Display();
                 break;
             case 6:
                 break;

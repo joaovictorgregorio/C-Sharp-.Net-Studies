@@ -48,5 +48,41 @@ namespace blog_project.Repositories
 
             return users;
         }
+
+        public static void AssociateUserRoles(int userId, List<int> roleIds)
+        {
+            // Delete existing UserRole records for the given userId
+            var deleteQuery = @"DELETE FROM 
+                                    [UserRole] 
+                                WHERE 
+                                    [UserId] = @UserId";
+
+            Database.Connection.Execute(
+                deleteQuery,
+                new
+                {
+                    UserId = userId
+                });
+
+            // Create new UserRole records for each roleId associated with the userId
+            var insertQuery = @"INSERT INTO 
+                                    [UserRole] (UserId, RoleId) 
+                                VALUES (@UserId, @RoleId)";
+
+            foreach (var roleId in roleIds)
+                Database.Connection.Execute(
+                    insertQuery,
+                    new
+                    {
+                        UserId = userId,
+                        RoleId = roleId
+                    });
+
+        }
+
+        internal void AssociateUserRoleScreen(int userId, List<int> selectedRoleIds)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
