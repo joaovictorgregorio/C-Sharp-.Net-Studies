@@ -20,7 +20,6 @@ namespace Blog.Models
         [Column("Name", TypeName = "NVARCHAR")] // Especifica o tipo de dados da coluna
         public string Name { get; set; }
 
-
         public string Slug { get; set; }
     }
 }

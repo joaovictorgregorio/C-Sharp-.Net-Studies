@@ -59,10 +59,10 @@ internal class Program
         var post = context
             .Posts
             // .AsNoTracking()
-            .Include(x => x.Author)
-            .Include(x => x.Category)
-            .OrderByDescending(x => x.LastUpdateDate)
-            .FirstOrDefault();
+            .Include(x => x.Author) // INNER JOIN
+            .Include(x => x.Category) // INNER JOIN
+            .OrderByDescending(x => x.LastUpdateDate) // Order By maior para menor
+            .FirstOrDefault(); // Executar o TOP 1
 
         post.Author.Name = "Teste";
 
