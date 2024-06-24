@@ -56,6 +56,12 @@ namespace FluentBlog.Data.Mappings
                 .HasColumnType("NVARCHAR")
                 .HasMaxLength(80);
 
+            builder.Property(x => x.GitHub)
+                .IsRequired()
+                .HasColumnName("GitHub")
+                .HasColumnType("NVARCHAR")
+                .HasMaxLength(100);
+
             builder.HasIndex(x => x.Email, "IX_User_Email").IsUnique();
             builder.HasIndex(x => x.Slug, "IX_User_Slug").IsUnique();
 
